@@ -1,0 +1,76 @@
+# TCAD Simulation Output Files
+*.tdr
+*.plt
+*.log
+*.grd
+*.bnd
+*.dat
+*.out
+
+# Sentaurus Workbench files
+*.swb
+*.wsp
+*.prj
+*_sprocess.cmd
+*_sdevice.cmd
+*_ins.in
+
+# Temporary and backup files
+*~
+*.bak
+*.tmp
+*.swp
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# Results and data directories (optional - uncomment if you want to track results)
+# results/
+# data/
+
+# Large binary files
+*.tgz
+*.zip
+*.tar.gz
+
+# OS generated files
+Thumbs.db
+.directory
+
+# Compilation and runtime files
+*.o
+*.a
+*.exe
+*.dll
+*.dylib
+
+# Log files
+*.log
+
+# Temporary directories
+tmp/
+temp/

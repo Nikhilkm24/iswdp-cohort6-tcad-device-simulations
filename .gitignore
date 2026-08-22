@@ -1,0 +1,117 @@
+# ---------------------------------------------------------------------------
+# ISWDP Cohort 6 (Advanced) — repository hygiene
+#
+# This file is deliberately explicit. Most of what it excludes is not clutter:
+# it is third-party software, copyrighted course material, or personal data that
+# must not be published. See PROVENANCE.md for the reasoning.
+# ---------------------------------------------------------------------------
+
+# --- Third-party software and installers (not redistributable) -------------
+*.exe
+*.msi
+*.iso
+*.dmg
+*.bin
+*.run
+VMware-*/
+VMware-*
+
+# --- Virtual machine images and guest state --------------------------------
+*.vmdk
+*.vmx
+*.vmxf
+*.vmsd
+*.nvram
+*.vmem
+*.vmss
+*.vmtm
+*.vswp
+*.lck/
+virtual_machine*/
+
+# --- Copyrighted course material -------------------------------------------
+# Lecture decks, session captures and the supplied SWB reference project
+# database. The program's own guidelines prohibit redistributing session
+# content, and the decks are Synopsys copyright.
+Study_Materials/
+ISWDP_AdvanceLevel/
+slides/
+lecture*/
+*class_slides*
+Screenshot*.png
+Screenshot*.jpg
+
+# --- Synopsys-shipped files -------------------------------------------------
+*.par
+sdevice.par
+models.par
+runlimits.xml
+
+# --- Textbooks and reference PDFs (not mine to distribute) ------------------
+Neamen.pdf
+*textbook*.pdf
+
+# --- Personal data: do not publish -----------------------------------------
+# Invoices, payment receipts, consent forms and program correspondence contain
+# email, phone number, transaction and registration identifiers.
+*invoice*
+*Invoice*
+*receipt*
+*Consent*
+*consent*
+*Gmail*
+*.eml
+*.msg
+
+# --- Bookmarks / shortcuts --------------------------------------------------
+*.url
+*.lnk
+*.webloc
+
+# --- TCAD run artefacts ----------------------------------------------------
+# Raw simulation output is large, machine-specific and regenerable. Node
+# databases, meshes, logs and plot data stay local.
+*.tdr
+*.grd
+*.dat
+*.plt
+*.plx
+*.sav
+*.out
+*.log
+*.err
+*.cmd.bak
+n[0-9]*_*.cmd
+gtree.dat
+gvars.dat
+gexec*
+pp*.cmd
+results/
+nodes/
+STDB/
+*.mesh
+*.bnd
+
+# --- Licence files and host configuration ----------------------------------
+*.lic
+*license*
+*.flexlm
+snpslmd*
+
+# --- OS / editor noise -----------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+*.tmp
+
+# --- Explicit allow-list overrides ------------------------------------------
+# The curated assets that ARE part of this repository must survive the broad
+# patterns above.
+!screenshots/**/*.png
+!reference/**/*.png
+!certificates/**/*.pdf

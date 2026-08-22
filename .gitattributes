@@ -1,0 +1,12 @@
+*                text=auto eol=lf
+
+*.md             text eol=lf diff=markdown
+LICENSE          text eol=lf
+.gitignore       text eol=lf
+.gitattributes   text eol=lf
+
+*.png            binary
+*.pdf            binary
+
+docs/*.md        linguist-documentation
+*.md             linguist-detectable
